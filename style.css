@@ -121,6 +121,98 @@ nav li>a {
 
 }
 
+/*infocard  */
+
+.cardportion {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.cardportion>.textinfo {
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+
+}
+
+
+.cardportion>.infocard>.cardtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: white;
+    padding: 55px;
+
+
+}
+
+
+.cardportion>.infocard>.cardtext2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid rgb(255, 253, 253);
+    background-color: rgb(255, 255, 255);
+    padding: 55px;
+    gap: 2px;
+    opacity: 25;
+    border-radius: 35px;
+    box-shadow: 0px 4px 16px 0px rgb(252, 239, 239);
+}
+
+.infocard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+
+
+.infocard>.card {
+    align-items: center;
+}
+
+.amount {
+    padding: 25px;
+}
+
+.image {
+    width: 14px;
+
+
+}
+
+.pic {
+    width: 215px;
+    border-radius: 14px 14px 0 0;
+
+}
+
+.imagecard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagecard>.cardtext {
+    border: 5px solid rgb(228, 224, 224);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 16px 0px rgb(196, 195, 195);
+    border-radius: 35px;
+
+}
+
+
+.imagecard>.cardtext>h4,
+p {
+    padding-left: 35px;
+}
+
+
+
+
+
 /* last section*/
 .lastsection {
     height: 100%;
