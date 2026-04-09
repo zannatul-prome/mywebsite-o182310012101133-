@@ -1,12 +1,14 @@
 /* header*/
 body {
     margin: 25px;
+    padding: 25px;
 }
 
 
 
 .head {
     height: 20vh;
+    padding-right: 25px;
     background-image: url('img5.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,18 +68,19 @@ nav li>a {
 }
 
 
-.text1 {
+.herotext>.text1 {
     color: chocolate;
 }
 
-.text2 {
+.herotext>.text2 {
     font-weight: 700;
     font-size: 60px;
     color: rgb(34, 32, 32);
 }
 
-.herotext>.text3 {
-    color: rgb(66, 66, 66);
+.herotext>p {
+    color: rgb(70, 69, 69);
+    padding: 0
 }
 
 .more {
@@ -121,6 +124,8 @@ nav li>a {
 
 }
 
+/* 2nd */
+
 /*infocard  */
 
 .cardportion {
@@ -144,11 +149,15 @@ nav li>a {
     justify-content: center;
 
     background-color: white;
-    padding: 55px;
+    padding: 25px;
 
 
 }
 
+.cardportion>.infocard>.cardtext>h4,
+p {
+    padding-right: 15px;
+}
 
 .cardportion>.infocard>.cardtext2 {
     display: flex;
@@ -163,16 +172,15 @@ nav li>a {
     box-shadow: 0px 4px 16px 0px rgb(252, 239, 239);
 }
 
-.infocard {
+.cardportion>.infocard {
     display: flex;
     justify-content: space-between;
     margin-bottom: 75px;
 }
 
+/* 3rd */
 
-.infocard>.card {
-    align-items: center;
-}
+
 
 .amount {
     padding: 25px;
@@ -325,7 +333,7 @@ span {
 @media (max-width: 600px) {
 
     body {
-        margin: 5px;
+        margin: 0;
     }
 
     .head {
@@ -340,8 +348,8 @@ span {
     }
 
 
-    .text2 {
-        font-size: 28px;
+    .herotext>.text2 {
+        font-size: 21px;
     }
 
     .text3 {
@@ -378,6 +386,62 @@ span {
     nav {
         display: none;
     }
+
+    /* 2nd */
+
+
+    .cardportion>.textinfo>h1 {
+        margin-left: 32px;
+        font-size: 22px;
+
+    }
+
+    .cardportion>.infocard {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+
+    .infocard>.cardtext>img {
+        width: 15vh;
+        margin-left: 10px;
+    }
+
+
+    .infocard>.cardtext2>img {
+        width: 15vh;
+    }
+
+    .infocard>.cardtext>h4,
+    p {
+        margin: 2px;
+        padding: 0;
+
+    }
+
+
+
+    /* 3rd */
+    .cardportion>.imagecard {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cardportion>.imagecard>.cardtext>p {
+        padding-left: 25px;
+        padding-bottom: 5px;
+    }
+
+
+
+
+
+
+
+
+
+
 
     /*last*/
 
@@ -465,6 +529,11 @@ span {
         padding-top: 4%;
     }
 
+    /* 3rd */
+
+
+
+    /* last */
     .lastsection {
 
         width: 100%;
