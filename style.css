@@ -217,14 +217,227 @@ p {
     padding-left: 35px;
 }
 
+/* 4th */
+.steps-section {
+    max-width: 800px;
+    margin-top: 65px;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.steps-section>.subtitle {
+    color: gray;
+    font-size: 14px;
+}
+
+.steps-section>.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.steps-section>.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.steps-section>.sectionstep>.steps>.step {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+}
+
+
+.content h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.steps-section>.sectionstep>.steps>.step>.content>p {
+    margin: 0px;
+    color: #555;
+    font-size: 14px;
+    padding-left: 0;
+}
+
+
+/* 5th */
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-left: 280px auto;
+    width: 75%;
+    padding-left: 55px;
+    font-family: 'Poppins', sans-serif;
+    gap: 50px;
+    background: #fff;
+    border-radius: 10px;
+
+}
+
+.testimonial>.content {
+    width: 63%;
+    margin-left: 235px;
+}
+
+.testimonial>.content>.subtitle {
+    color: #5E6282;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.testimonial>.content>.title {
+    font-size: 44px;
+    color: #14183E;
+    margin: 15px 0 40px;
+    line-height: 1.2;
+}
+
+
+.testimonial>.slider>.front-card>.cardtext {
+    display: flex;
+}
 
 
 
+.front-card {
 
-/* last section*/
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.05);
+    padding: 33px;
+}
+
+.location {
+    color: #5E6282;
+    font-size: 13px;
+    margin: 5px 0 0;
+}
+
+/* 6th */
+.applogo {
+    margin-left: 15%;
+    padding-top: 5%;
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 7th */
+.subscribe-section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+
+
+    background-image: url('back.png');
+
+    background-repeat: no-repeat;
+    background-size: 80%;
+
+    background-position: center;
+
+    background-color: #fff;
+}
+
+.subscribe-title {
+    color: #5e6282;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0px;
+
+
+}
+
+.input-group {
+    background: #fff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 420px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.subscribe-btn {
+    background: #ff7d68 100%;
+    color: white;
+    border: none;
+    padding: 15px 45px;
+    border-radius: 10px;
+    font-size: 13px;
+    cursor: pointer;
+
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    width: 100%;
+    max-width: 600px;
+
+}
+
+/* 8th */
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-logo {
+    font-size: 40px;
+    color: #181E4B;
+    margin-top: 15px;
+}
+
+.tagline {
+    color: #5E6282;
+    font-size: 13px;
+    line-height: 1.6;
+    max-width: 200px;
+    padding-left: 0px;
+}
+
+.footer-text {
+    color: #5E6282;
+    font-size: 18px;
+    padding-left: 0px;
+}
+
+
+/* last */
 .lastsection {
     height: 100%;
-    background-image: url('images/img1.png');
+    background-image: url('images/footerback.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -232,7 +445,7 @@ p {
 }
 
 .logo1 {
-    height: 50vh;
+    min-height: 30vh;
 }
 
 .textpart {
@@ -326,6 +539,7 @@ span {
     color: aliceblue;
     margin-left: 39%;
     padding-bottom: 9%;
+    width: 44%;
 }
 
 /*  MOBILE (max 600px) */
@@ -433,13 +647,66 @@ span {
         padding-bottom: 5px;
     }
 
+    /* 4th */
+    .steps-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* 5th */
+    .testimonial {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .testimonial>.content {
+        width: 100%;
+        margin-left: 15px;
+
+    }
+
+    .testimonial>.content>.title {
+        font-size: 34px;
+
+    }
+
+    /* 6th */
+    .applogo {
+        margin-left: 5%;
+
+    }
+
+    /* 7th */
+
+    .subscribe-title {
+        font-size: 12px;
+    }
+
+    .input-group input {
+        font-size: 11px;
+        width: 50%;
+    }
+
+    .input-group {
+        padding: 8px 15px;
+
+    }
+
+    .subscribe-btn {
+        padding: 2px 25px;
+        border-radius: 10px;
+        font-size: 8px;
 
 
+    }
 
-
-
-
-
+    /* 8th */
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
 
 
@@ -454,12 +721,16 @@ span {
         margin-top: 35px;
     }
 
-    .logo1 {
-        height: 15vh;
+    .textpart>.logo1 {
+        width: 80%;
+        height: 50%;
+
+
     }
 
     .lastsection>.textpart>.text2 {
         font-size: 15px;
+
 
 
     }
@@ -467,7 +738,6 @@ span {
 
     .lastsection>.textpart>.text3 {
         font-size: 13px;
-
 
     }
 
@@ -529,7 +799,22 @@ span {
         padding-top: 4%;
     }
 
-    /* 3rd */
+    /*5thd */
+    .testimonial {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .testimonial>.content {
+        width: 100%;
+        margin-left: 15px;
+
+    }
+
+    .testimonial>.content>.title {
+        font-size: 34px;
+
+    }
 
 
 
@@ -537,55 +822,53 @@ span {
     .lastsection {
 
         width: 100%;
-        min-height: 70vh;
+        min-height: 50vh;
 
-        padding-top: 20px;
-        margin-top: 35px;
     }
 
-    .logo1 {
-        height: 25vh;
+    .textpart>.logo1 {
+        width: 80%;
+        height: 50%;
+
+
     }
 
     .lastsection>.textpart>.text2 {
         font-size: 25px;
 
 
+
     }
 
     .lastsection>.textpart>.text3 {
-        font-size: 19px;
-
+        font-size: 18px;
 
     }
 
     .box,
     .box1 {
-        width: 48%;
+        width: 50%;
         font-size: 22px;
     }
 
     .box1 {
-        margin-left: 21%;
+        margin-left: 15%;
         font-size: 18px;
 
     }
 
     .message {
-        margin-left: 0;
-        font-size: 23px;
-        text-align: center;
+
+        font-size: 18px;
+        margin-left: 115px;
+
     }
 
     .price {
-
-        margin-left: 11%;
-        font-size: 19px;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 115px;
+        font-size: 12px;
     }
 
-    .footer {
-
-        margin-left: 21%;
-        text-align: center;
-    }
 }
